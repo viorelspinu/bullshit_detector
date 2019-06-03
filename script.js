@@ -104,6 +104,7 @@ function getColorAt(webcam, x, y) {
 
 // Draw a colored rectangle on the canvas
 function drawRect(rect, context, color) {
-  context.strokeStyle = "rgb(" + color.r + ", " + color.g + ", " + color.b + ")";
+  //context.strokeStyle = "rgb(" + color.r + ", " + color.g + ", " + color.b + ")";
+  context.strokeStyle = "rgb(" + 255 + ", " + 0 + ", " + 0 + ")";
   context.strokeRect(rect.x, rect.y, rect.width, rect.height);
 }
