@@ -40,9 +40,10 @@ window.addEventListener("load", function (e) {
     if (e.data.length !== 0) {
 
       e.data.forEach(function (rect) {
-        // console.log(rect);
-        count++;
-        drawRect(rect, context, color);
+        if ((rect.width > 20) && (rect.height > 20)) {
+          count++;
+          drawRect(rect, context, color);
+        }
       });
 
     } else {
